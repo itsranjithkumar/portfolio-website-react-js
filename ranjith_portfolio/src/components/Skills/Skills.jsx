@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Skills.css'
-import {Skills} from '../../utils/data'
+import {Skillsdata} from '../../utils/data'
 import SkillCard from './SkillCard/SkillCard'
 import SkillsInfoCard from './SkillsInfoCard/SkillsInfoCard';
 
 const Skills = () => {
-  const [selectedSkill,setselectedSkill] = useState(Skills[0]);
+  const [selectedSkill,setselectedSkill] = useState(Skillsdata[0]);
 
   const handleselectSkill = (data) => {
     selectedSkill(data);}
-  };
+ 
   return (
     <section className='skils-container'>
         <h5>Technical proficiency</h5>
@@ -17,14 +17,14 @@ const Skills = () => {
 
         <div className='skills-content'></div>
           <div className='skills'>
-            {Skills.map((item)=> (
+            {Skillsdata?.map((item)=> (
 
               <SkillCard
-              Key={item.title}
+              key={item.title}
               iconUrl={item.icon}
               title={item.title}
               isActive={selectedSkill.title === item.title}
-              onClick={(){
+              onClick={()=>{
                 handleselectSkill(item);
               }}
               />
@@ -39,7 +39,7 @@ const Skills = () => {
           <div className='skills-info'>
             <SkillsInfoCard
             heading={selectedSkill.title}
-            skills={selectedSkill.skills}
+            skills={selectedSkill.Skills}
             />
 
           </div>
