@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './WorkExperience.css'
-import { WorkExperience } from '../../../utils/data'
+import { WORK_EXPERIENCE } from '../../utils/data'
 import ExperienceCard from './ExperienceCard/ExperienceCard'
 import Slider from 'react-slick';
 
 const WorkExperience = () => {
   const sliderRef = useRef();
   const settings ={
-    dots: False,
-    infinite: True,
+    dots: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: False,
+    arrows: false,
     responsive: [
       {
         breakpoint: 769,
@@ -48,12 +48,12 @@ const slideLeft = () => {
 
 
         <Slider ref={sliderRef} {...settings}>
-          {WorkExperience.map((item)=> (
+          {WORK_EXPERIENCE.map((item)=> (
             <ExperienceCard key={item.title} details={item}/>
           ))}
         </Slider>
 
-        {WorkExperience.map((item)=> (
+        {WORK_EXPERIENCE.map((item)=> (
             
             <ExperienceCard key={item.title} details={item}/>
         ))}

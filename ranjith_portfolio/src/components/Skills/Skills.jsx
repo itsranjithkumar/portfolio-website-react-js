@@ -16,7 +16,7 @@ const Skills = () => {
 
 
         <div className='skills-content'></div>
-          <div className='skills'>
+          <div className='Skills'>
             {Skillsdata?.map((item)=> (
 
               <SkillCard
