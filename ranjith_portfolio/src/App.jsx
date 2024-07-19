@@ -15,6 +15,7 @@ const App = () => {
       <WorkExperience/>
       <ContactMe/>
       </div>
+      <Footer/>
 
       
     </>
