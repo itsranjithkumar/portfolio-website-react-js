@@ -11,7 +11,7 @@ form{
 .name-container {
     display: flex;
     align-items: center;
-    grid-gap: 1.5rem;
+    gap: 1.5rem;
 }
 
 form input,
@@ -19,7 +19,7 @@ form textarea {
     flex: 1;
     width: 100%;
     font-size: 0.9rem;
-    color: after;
+    color: #fff;
     background: #130f2a;
     border-radius: 0.6rem;
     border: 1.5px solid #6751b9;

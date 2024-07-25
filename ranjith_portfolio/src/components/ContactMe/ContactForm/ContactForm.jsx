@@ -6,13 +6,13 @@ const ContactForm = () => {
     <div className='contact-form-container'>
       <from>
         <div className='name-container'>
-            <input type='text' name='firstname' placeholder='Last Name'/>
-            <input type='text' name='lastname' placeholder='Last Name'/>
+            <input type='text' name='firstname' placeholder='first Name'/>
+            <input type='text' name='lastname' placeholder='last Name'/>
         </div>
-        <input type='text' name='email' placeholder='Email'/>
-        <textarea type='text' name='message' placeholder='Message' rows={3}/>
+        <input type='email' name='email' placeholder='email'/>
+        <textarea type='text' name='message' placeholder='message' rows={3}></textarea>
 
-        <button>SEND</button>
+        <button type='submit'>SEND</button>
       </from>
     </div>
   )
