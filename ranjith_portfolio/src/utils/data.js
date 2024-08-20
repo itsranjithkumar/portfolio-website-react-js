@@ -68,7 +68,7 @@ export const WORK_EXPERIENCE= [
 {
     title: 'Frontend intern at web Studio',
     date: 'july 2022 - july 2023',
-    responsibitities: [
+    responsibilities: [
         'Gain hands-on experience in front-end development using HTML, CSS, and JavaScript.',
         'Learn about front-end frameworks and libraries like React, Angular, or Vue.js.',
         'Assist in creating and maintaining web pages under the supervision of senior developers.',
