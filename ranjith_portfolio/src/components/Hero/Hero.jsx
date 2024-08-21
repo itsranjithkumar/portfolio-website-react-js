@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Hero.css'
 import backend_img from '../../assets/icons8-backend-development-64.png'
-import gokul_img from '../../assets/gokul.jpeg'
+import myimage_png from '../../assets/myimage.jpg'
 import html_img from '../../assets/icons8-html5-144.png'
 import css_img from '../../assets/icons8-css-144.png'
 import js_img from '../../assets/icons8-js-144.png'
@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className="tech-icon">
                 <img src={backend_img} alt="react" />
                 </div>
-                <img  className="hero_main_image"src={gokul_img} alt="gokul" />
+                <img  className="hero_main_image"src={myimage_png} alt="myimage" />
             </div>
             <div>
                 <div className="tech-icon">
