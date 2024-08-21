@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-
+import { Skillsdata as SKILLS } from '../../utils/data'
 import './Skills.css'
-import { SKILLS } from '../../utils/data'
 import SkillCard from './SkillCard/SkillCard'
 import SkillsInfoCard from './SkillsInfoCard/SkillsInfoCard'
 
@@ -20,7 +19,7 @@ const Skills = () => {
 
         <div className="skills-content">
             <div className="skills">
-                {SKILLS.map((item)=>(
+                { SKILLS.map((item)=>(
                     <SkillCard
                         key={item.title}
                         iconUrl={item.icon}
