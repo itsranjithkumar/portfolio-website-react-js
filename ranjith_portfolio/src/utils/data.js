@@ -1,5 +1,6 @@
 
 export const Skillsdata = [
+    
     {
         title: 'Frontend',
         icon:'./src/assets/react.svg',

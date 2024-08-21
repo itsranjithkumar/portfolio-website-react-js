@@ -7,18 +7,18 @@ const ContactMe = () => {
   return (
     <section className='contact-container'>
      <h5>
-         Contaact me
+         Contact me
         </h5>
 
         <div className="contact-content">
             <div style={{flex:1}}>
             <ContactInfoCard
-                iconUrl="../../assets/images/GitHub.png"
-                text="+91 1234567890"
+                iconUrl="../..//src/assets/GitHub.png"
+                text="+91 702 456 7890"
             />
             <ContactInfoCard
-                iconUrl="../../assets/images/GitHub.png"
-                text="itsranjithkumar's Github"
+                iconUrl="../..//src/assets/GitHub.png"
+                text="https://github.com/itsranjithkumar"
             />
 
             </div>
