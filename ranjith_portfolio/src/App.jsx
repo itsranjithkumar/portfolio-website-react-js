@@ -8,7 +8,7 @@ import ContactMe from './components/ContactMe/ContactMe'
 import Footer from './components/Footer/Footer'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import GithubStreak from './components/GithubStreak/GithubStreak'
 
 
 
@@ -21,6 +21,9 @@ const App = () => {
     <Hero />
     <Skills />
     <WorkExperience/>
+
+    <GithubStreak/>
+
     <ContactMe/>
     </div>
     <Footer/>
