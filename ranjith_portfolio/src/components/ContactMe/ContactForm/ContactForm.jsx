@@ -28,16 +28,16 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        'service_9w6em17',  // Your EmailJS service ID
-        'template_svqptd4',  // Your EmailJS template ID
+        'service_m3l4i4w',  // Your EmailJS service ID
+        'template_1qk656m',  // Your EmailJS template ID
         {
           from_name: `${form.firstname} ${form.lastname}`,
-          to_name: "Hariprasath",  // Change to your recipient name
-          from_email: form.email,
-          to_email: "hariprasa36@gmail.com",  // Change to your recipient email
+          to_name: "Ranjith Kumar",  // Change to your recipient name
+          email: form.email,
+          to_email: "ranjithkumarms28@gmail.com",  // Change to your recipient email
           message: form.message,
         },
-        'wSTctb1NO_9LfhoKo'  // Your EmailJS public key
+        'u5YtmLUXVAFtx4o0T'  // Your EmailJS public key
       )
       .then(
         () => {
