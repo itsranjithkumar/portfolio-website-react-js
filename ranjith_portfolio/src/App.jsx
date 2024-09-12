@@ -14,6 +14,7 @@ import GithubStreak from './components/GithubStreak/GithubStreak'
 
 const App = () => {
   return (
+    
     <>
     <Navbar />
     <div className="container" id="home">
