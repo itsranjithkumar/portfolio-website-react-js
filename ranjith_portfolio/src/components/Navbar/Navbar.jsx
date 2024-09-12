@@ -23,10 +23,10 @@ const Navbar = () => {
                 <a href='#skills' className='menu-item'>Skills</a>
                 </li>
                 <li>
-                <a href='#Work experience' className='menu-item'>Work Experience</a>
+                <a href='#Work_experience' className='menu-item'>Work Experience</a>
                 </li>
                 <li>
-                <a href='#contact Me' className='menu-item'>contact Me</a>
+                <a href='#contact_Me' className='menu-item'>contact Me</a>
                 </li>
 
                 <button className='contact-btn' onClick={() => {}}>

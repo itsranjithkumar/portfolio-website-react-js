@@ -52,7 +52,7 @@ const WorkExperience = () => {
             <ExperienceCard key={item.title} details={item} />
           ))}
         </Slider>
-        <p id='Experience'></p>
+        <p id='contact_Me'></p>
 
       </div>
     </section>

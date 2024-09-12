@@ -1,7 +1,7 @@
 export const Skillsdata = [
     {
         title: 'Frontend',
-        icon: './src/assets/react.svg',
+        icon: './assets/react.svg',
         skills: [   // Use lowercase consistently
             {skill: 'HTML5', percentage: '80%'},
             {skill: 'CSS3 (Sass/SCSS)', percentage: '90%'},
@@ -11,7 +11,7 @@ export const Skillsdata = [
     },
     {
         title: 'Backend',
-        icon: './src/assets/react.svg',
+        icon: './assets/react.svg',
         skills: [   // Use lowercase consistently
             { skill: 'Node.js', percentage: '70%'},
             { skill: 'Express.js', percentage: '65%'},
@@ -19,7 +19,7 @@ export const Skillsdata = [
     },
     {
         title: 'Tools',
-        icon: './src/assets/react.svg',
+        icon: './assets/react.svg',
         skills: [   // Use lowercase consistently
             {skill: 'Git & GitHub', percentage: '85%'},
             {skill: 'Visual Studio Code', percentage: '75%'},
@@ -29,7 +29,7 @@ export const Skillsdata = [
     },
     { 
         title: 'Soft Skills',
-        icon: './src/assets/react.svg',
+        icon: './assets/react.svg',
         skills: [   // Use lowercase consistently
             {skill: 'Problem-solving', percentage: '80%'},
             {skill: 'Collaboration', percentage: '85%'},
