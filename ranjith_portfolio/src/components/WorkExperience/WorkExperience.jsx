@@ -54,7 +54,7 @@ const WorkExperience = () => {
             return <ExperienceCard key={index} details={item} />;
           })}
         </Slider>
-
+         <p id ='work-experience'></p>
       </div>
     </section>
   );

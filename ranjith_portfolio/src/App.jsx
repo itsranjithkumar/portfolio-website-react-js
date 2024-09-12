@@ -14,13 +14,33 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <div className="container" id="home">
-        <Hero />
-        <Skills />
-        <WorkExperience />
-        <GithubStreak />
-        <ContactMe />
+      <div className="container">
+        {/* Home Section */}
+        <section id="home">
+          <Hero />
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills">
+          <Skills />
+        </section>
+
+        {/* Work Experience Section */}
+        <section id="work-experience">
+          <WorkExperience />
+        </section>
+
+        {/* GitHub Streak Section */}
+        <section id="github-streak">
+          <GithubStreak />
+        </section>
+
+        {/* Contact Me Section */}
+        <section id="contact-me">
+          <ContactMe />
+        </section>
       </div>
+
       <Footer />
     </div>
   );
