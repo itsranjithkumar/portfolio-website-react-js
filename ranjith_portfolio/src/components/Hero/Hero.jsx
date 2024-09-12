@@ -1,11 +1,11 @@
 import React from 'react'
 
 import './Hero.css'
-import backend_img from '../../assets/icons8-backend-development-64.png'
-import myimage_png from '../../assets/myimage.jpg'
-import html_img from '../../assets/icons8-html5-144.png'
-import css_img from '../../assets/icons8-css-144.png'
-import js_img from '../../assets/icons8-js-144.png'
+import backend_img from '../../../public/assets/icons8-backend-development-64.png'
+import myimage_png from '../../../public/assets/myimage.jpg'
+import html_img from '../../../public/assets/icons8-html5-144.png'
+import css_img from '../../../public/assets/icons8-css-144.png'
+import js_img from '../../../public/assets/icons8-js-144.png'
 
 
 

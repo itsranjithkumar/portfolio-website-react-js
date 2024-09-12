@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from '../../assets/mylogo.png';
+import logo from '../../../public/assets/mylogo.png';
 import MobileNav from './MobileNav/MobileNav';
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
