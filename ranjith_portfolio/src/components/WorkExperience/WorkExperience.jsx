@@ -4,12 +4,13 @@ import { WORK_EXPERIENCE } from '../../utils/data'; // Ensure this path is corre
 import ExperienceCard from './ExperienceCard/ExperienceCard';
 import Slider from 'react-slick';
 
-const WorkExperience = () => { 
+const WorkExperience = () => {
   const sliderRef = useRef(null);
 
+  // Update the settings here
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false, // Disabled infinite scroll
     speed: 500,
     slidesToShow: 2,
     arrows: false,
