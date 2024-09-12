@@ -28,6 +28,7 @@ const Hero = () => {
                 </div>
                 <img  className="hero_main_image"src={myimage_png} alt="myimage" />
             </div>
+                <p id="skills"></p>
             <div>
                 <div className="tech-icon">
                 <img src={html_img} alt="html" />

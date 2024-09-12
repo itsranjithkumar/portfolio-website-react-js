@@ -1,5 +1,4 @@
 .work-experience-card {
-
     background: #130f2a;
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
@@ -7,7 +6,7 @@
     margin: 0 1rem;
 }
 
-.work-experience-card h5{
+.work-experience-card h5 {
     font-size: 1.05rem;
     font-weight: 500;
     margin-bottom: 0.7rem;
@@ -15,33 +14,39 @@
 
 .work-duration {
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 0.7rem;  
     font-weight: 400;
     background: rgba(103, 81, 105, 0.5);
     border-radius: 0.3rem;
     padding: 0.4rem 0.6rem;
     margin-bottom: 1.3rem;
-
 }
 
 .work-experience-card ul {
     list-style: none;
+    padding-left: 1.5rem; /* Added padding to make room for bullets */
     font-size: 0.8rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
     position: relative;
 }
 
-.work-experience-card ul li::after {
+.work-experience-card ul li {
+    position: relative;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem; /* Space between items */
+}
+
+.work-experience-card ul li::before {
     content: "";
     width: 0.5rem;
     height: 0.5rem;
     background-color: #6751b9;
-    border-radius: 0.5rem;
+    border-radius: 50%;
     position: absolute;
-    left: -1.3rem;
-    top: 0.35rem;
-
+    left: -1.5rem; /* Adjust this value based on your layout */
+    top: 50%; /* Vertically center the bullet */
+    transform: translateY(-50%); /* Adjust bullet to center */
 }
 
 @media (max-width: 768px) {
@@ -53,7 +58,3 @@
 .work-experience-card h6 {
     font-size: 0.95rem;
 }
- .work-experience-card ul li{
-    font-size: 0.75rem;
- }   
-

@@ -16,10 +16,10 @@ const App = () => {
   return (
     <>
     <Navbar />
-    <div className="container">
+    <div className="container" id="home">
 
-    <Hero/>
-    <Skills/>
+    <Hero />
+    <Skills />
     <WorkExperience/>
     <ContactMe/>
     </div>

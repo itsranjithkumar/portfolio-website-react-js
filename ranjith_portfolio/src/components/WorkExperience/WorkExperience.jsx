@@ -4,9 +4,9 @@ import { WORK_EXPERIENCE } from '../../utils/data';
 import ExperienceCard from './ExperienceCard/ExperienceCard';
 import Slider from 'react-slick';
 
-const WorkExperience = () => {
+const WorkExperience = () => { 
   const sliderRef = useRef(null);
-
+  
   const settings = {
     dots: false,
     infinite: true,
@@ -52,6 +52,8 @@ const WorkExperience = () => {
             <ExperienceCard key={item.title} details={item} />
           ))}
         </Slider>
+        <p id='Experience'></p>
+
       </div>
     </section>
   );
