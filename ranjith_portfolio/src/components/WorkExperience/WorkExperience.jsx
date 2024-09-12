@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import './WorkExperience.css';
-import { WORK_EXPERIENCE } from '../../utils/data';
+import { WORK_EXPERIENCE } from '../../utils/data'; // Ensure this path is correct
 import ExperienceCard from './ExperienceCard/ExperienceCard';
 import Slider from 'react-slick';
 
 const WorkExperience = () => { 
   const sliderRef = useRef(null);
-  
+
   const settings = {
     dots: false,
     infinite: true,
@@ -25,14 +25,14 @@ const WorkExperience = () => {
   };
 
   const slideRight = () => {
-    console.log("Slide right clicked");
-    sliderRef.current?.slickNext(); // Use optional chaining to prevent errors if ref is not set
+    sliderRef.current?.slickNext();
   };
 
   const slideLeft = () => {
-    console.log("Slide left clicked");
-    sliderRef.current?.slickPrev(); // Use optional chaining to prevent errors if ref is not set
+    sliderRef.current?.slickPrev();
   };
+
+  console.log("Rendering WorkExperience with data:", WORK_EXPERIENCE); // Debug log
 
   return (
     <section className='experience-container'>
@@ -48,11 +48,11 @@ const WorkExperience = () => {
         </div>
 
         <Slider ref={sliderRef} {...settings}>
-          {WORK_EXPERIENCE.map((item) => (
-            <ExperienceCard key={item.title} details={item} />
-          ))}
+          {WORK_EXPERIENCE.map((item, index) => {
+            console.log("Rendering item:", item); // Debug log
+            return <ExperienceCard key={index} details={item} />;
+          })}
         </Slider>
-        <p id='contact_Me'></p>
 
       </div>
     </section>
