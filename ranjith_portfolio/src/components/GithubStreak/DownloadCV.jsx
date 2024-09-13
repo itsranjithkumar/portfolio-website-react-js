@@ -6,7 +6,7 @@ const DownloadCV = () => {
   };
 
   return (
-<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '100px' }}>
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '80px',height : '100px' }}>
   <div className="downloadCV" onClick={handleDownload} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
     <FaDownload style={{ marginRight: '8px' }} />
     <p>Download my Resume</p>
