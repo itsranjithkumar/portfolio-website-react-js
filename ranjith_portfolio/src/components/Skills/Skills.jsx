@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Skillsdata as SKILLS } from '../../utils/data';
-import './Skills.css';
-import SkillCard from './SkillCard/SkillCard';
-import SkillsInfoCard from './SkillsInfoCard/SkillsInfoCard';
+import React, { useState } from 'react'
+import { Skillsdata as SKILLS } from '../../utils/data'
+import './Skills.css'
+import SkillCard from './SkillCard/SkillCard'
+import SkillsInfoCard from './SkillsInfoCard/SkillsInfoCard'
+
 
 const Skills = () => {
   // Manage the selected skill state
@@ -45,4 +46,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Skills

@@ -11,7 +11,7 @@ export const Skillsdata = [
     },
     {
         title: 'Backend',
-        icon: './assets/backend.png',
+        icon: './assets/react.svg',
         skills: [
             { skill: 'Node.js', percentage: '70%' },
             { skill: 'Express.js', percentage: '65%' },
@@ -19,7 +19,7 @@ export const Skillsdata = [
     },
     {
         title: 'Tools',
-        icon: './assets/tools3.png',
+        icon: './assets/react.svg',
         skills: [
             { skill: 'Git & GitHub', percentage: '85%' },
             { skill: 'Visual Studio Code', percentage: '75%' },
@@ -29,7 +29,7 @@ export const Skillsdata = [
     },
     { 
         title: 'Soft Skills',
-        icon: './assets/softskill2.png',
+        icon: './assets/react.svg',
         skills: [
             { skill: 'Problem-solving', percentage: '80%' },
             { skill: 'Collaboration', percentage: '85%' },

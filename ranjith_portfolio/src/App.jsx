@@ -1,42 +1,39 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Skills from './components/Skills/Skills';
+import WorkExperience from './components/WorkExperience/WorkExperience';
+import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
-import './App.css';
+import GithubStreak from './components/GithubStreak/GithubStreak';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-const Hero = lazy(() => import('./components/Hero/Hero'));
-const Skills = lazy(() => import('./components/Skills/Skills'));
-const WorkExperience = lazy(() => import('./components/WorkExperience/WorkExperience'));
-const ContactMe = lazy(() => import('./components/ContactMe/ContactMe'));
-const GithubStreak = lazy(() => import('./components/GithubStreak/GithubStreak'));
-const DownloadCV = lazy(() => import('./components/GithubStreak/DownloadCV'));
+import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <header>
-        <Navbar />
-      </header>
-      <main className="container">
-        <Suspense fallback={<div>Loading...</div>}>
-          <section id="home">
-            <Hero />
-          </section>
+      <Navbar />
+      <div className="container">
+        {/* Home Section */}
+        <section id="home">
+          <Hero />
+        </section>
 
-          <section id="skills">
-            {/* <h2>Skills</h2> */}
-            <Skills />
-          </section>
+        {/* Skills Section */}
+        <section id="skills">
+          <Skills />
+        </section>
 
-          <section id="work-experience">
-            {/* <h2>Work Experience</h2> */}
-            <WorkExperience />
-          </section>
+        {/* Work Experience Section */}
+        <section id="work-experience">
+          <WorkExperience />
+        </section>
 
-          <section id="resume">
-            <DownloadCV />
-          </section>
+        {/* GitHub Streak Section */}
+        <section id="github-streak">
+          <GithubStreak />
+        </section>
 
           <section id="github-streak">
             {/* <h2>GitHub Streak</h2> */}
@@ -47,13 +44,16 @@ const App = () => {
             {/* <h2>Contact Me</h2> */}
             <ContactMe />
           </section>
-        </Suspense>
-      </main>
+        {/* </Suspense> */}
+      {/* </main> */}
       <footer>
         <Footer />
       </footer>
     </div>
+    </div>
+
+
   );
-}
+};
 
 export default App;
