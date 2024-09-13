@@ -25,12 +25,12 @@ const App = () => {
           </section>
 
           <section id="skills">
-            <h2>Skills</h2>
+            {/* <h2>Skills</h2> */}
             <Skills />
           </section>
 
           <section id="work-experience">
-            <h2>Work Experience</h2>
+            {/* <h2>Work Experience</h2> */}
             <WorkExperience />
           </section>
 
@@ -39,12 +39,12 @@ const App = () => {
           </section>
 
           <section id="github-streak">
-            <h2>GitHub Streak</h2>
+            {/* <h2>GitHub Streak</h2> */}
             <GithubStreak />
           </section>
 
           <section id="contact-me">
-            <h2>Contact Me</h2>
+            {/* <h2>Contact Me</h2> */}
             <ContactMe />
           </section>
         </Suspense>
