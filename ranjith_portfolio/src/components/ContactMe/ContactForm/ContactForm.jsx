@@ -26,6 +26,12 @@ const ContactForm = () => {
     e.preventDefault();
     setLoading(true);
 
+    if (!form.email || !form.message || !form.firstname || !form.lastname) {
+      alert("Please fill in all the fields.");
+      setLoading(false);
+      return;
+
+    }
     emailjs
       .send(
         'service_m3l4i4w',  // Your EmailJS service ID

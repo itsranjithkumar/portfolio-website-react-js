@@ -13,8 +13,8 @@ const ContactMe = () => {
         <div className="contact-content">
             <div style={{flex:1}}>
             <ContactInfoCard
-                iconUrl="./assets/phone-solid.svg"
-                text="+91 702 456 7890"
+                iconUrl="./assets/linkedin2.png"
+                text="https://www.linkedin.com/in/ranjith-kumar-m-s-741364265/"
             />
             <ContactInfoCard
                 iconUrl="./assets/github-brands-solid.svg"
