@@ -15,45 +15,49 @@ const DownloadCV = lazy(() => import('./components/GithubStreak/DownloadCV'));
 const App = () => {
   return (
     <div className="App">
-      <header>
-        <Navbar />
-      </header>
-      <main className="container">
-        <Suspense fallback={<div>Loading...</div>}>
-          <section id="home">
-            <Hero />
-          </section>
+      <Navbar />
+      <div className="container">
+      <Suspense fallback={<div>Loading...</div>}>
+        {/* Home Section */}
+        <section id="home">
+          <Hero />
+        </section>
 
-          <section id="skills">
-            <h2>Skills</h2>
-            <Skills />
-          </section>
+        {/* Skills Section */}
+        <section id="skills">
+          <Skills />
+        </section>
 
-          <section id="work-experience">
-            <h2>Work Experience</h2>
-            <WorkExperience />
-          </section>
+        {/* Work Experience Section */}
+        <section id="work-experience">
+          <WorkExperience />
+        </section>
 
-          <section id="resume">
-            <DownloadCV />
-          </section>
+        {/* GitHub Streak Section */}
+        <section id="resume">
+          <DownloadCV />
+        </section>
 
           <section id="github-streak">
-            <h2>GitHub Streak</h2>
+            {/* <h2>GitHub Streak</h2> */}
             <GithubStreak />
           </section>
 
           <section id="contact-me">
-            <h2>Contact Me</h2>
+            {/* <h2>Contact Me</h2> */}
             <ContactMe />
           </section>
-        </Suspense>
-      </main>
+          </Suspense>
+        {/* </Suspense> */}
+      {/* </main> */}
       <footer>
         <Footer />
       </footer>
     </div>
+    </div>
+
+
   );
-}
+};
 
 export default App;

@@ -49,7 +49,7 @@
     padding: 0.5rem;
 }
 
-/* Menu Item Hover Effect: Underline */
+/* Menu Item Hover Effect */
 .menu-item::before {
     content: '';
     width: 0;

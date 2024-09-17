@@ -7,7 +7,7 @@
 }
 
 .experience-content {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .experience-container h5 {
@@ -20,4 +20,9 @@
 .arrow-left,
 .arrow-right {
     display: none; /* Hide arrows */
+}
+.parent-section {
+    width: 100vw; /* Ensures it covers the full viewport width */
+    padding: 0; /* Remove unnecessary padding if there is any */
+    margin: 0 auto; /* Center the section */
 }

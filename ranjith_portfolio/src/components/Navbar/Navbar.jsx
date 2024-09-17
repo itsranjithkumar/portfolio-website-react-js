@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    setOpenMenu(!openMenu); // Toggle the mobile menu open/close
+    setOpenMenu(!openMenu);
   };
 
   return (
