@@ -12,13 +12,27 @@
 
 
 .skills-card:hover,
-.skills-card:active{
+.skills-card.active{
     background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
 }
 
 .skills-card span{
     font-size: 1.3rem;
     font-weight: 500;
+}
+.skills-card span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+.skills-card:hover span::after,
+.skills-card.active span::after {
+    width: 100%;
 }
 
 .skill-icon{

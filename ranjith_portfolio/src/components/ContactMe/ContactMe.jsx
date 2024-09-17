@@ -6,7 +6,7 @@ import ContactForm from './ContactForm/ContactForm';
 const ContactMe = () => {
   return (
     <section className='contact-container'>
-      <h5>Contact me</h5>
+      <h5>Contact Me</h5>
 
       <div className="contact-content">
         <div className="contact-info" style={{ flex: 1 }}>

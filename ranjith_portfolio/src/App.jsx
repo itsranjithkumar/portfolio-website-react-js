@@ -15,6 +15,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <div className="container">
+      <Suspense fallback={<div>Loading...</div>}>
         {/* Home Section */}
         <section id="home">
           <Hero />
@@ -31,8 +32,8 @@ const App = () => {
         </section>
 
         {/* GitHub Streak Section */}
-        <section id="github-streak">
-          <GithubStreak />
+        <section id="resume">
+          <DownloadCV />
         </section>
 
           <section id="github-streak">
@@ -44,6 +45,7 @@ const App = () => {
             {/* <h2>Contact Me</h2> */}
             <ContactMe />
           </section>
+          </Suspense>
         {/* </Suspense> */}
       {/* </main> */}
       <footer>
