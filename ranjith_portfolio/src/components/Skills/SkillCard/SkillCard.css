@@ -19,9 +19,6 @@
 .skills-card span{
     font-size: 1.3rem;
     font-weight: 500;
-    position: relative;
-    display: inline-block;
-    margin-top: 10px;
 }
 .skills-card span::after {
     content: '';

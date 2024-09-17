@@ -39,10 +39,7 @@ const WorkExperience = () => {
       <h5>Work Experience</h5>
 
       <div className='experience-content'>
-        <div className='arrow-right' onClick={slideRight}>
-          <i className='fa-solid fa-chevron-right'></i>
-        </div>
-
+        {/* Left arrow for slider */}
         <div className='arrow-left' onClick={slideLeft}>
           <i className='fa-solid fa-chevron-left'></i>
         </div>

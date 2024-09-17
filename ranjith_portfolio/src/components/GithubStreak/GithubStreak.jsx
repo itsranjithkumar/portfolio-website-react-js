@@ -1,10 +1,8 @@
 import React from 'react'
 
-import DownloadCV from './DownloadCV'
 const GithubStreak = () => {
   return (
     <div style={{ textAlign: 'center' }}>
-
       <p style={{ fontSize: '25px' }}>Ranjith Kumar's GitHub Streak</p>
       <br />
       <a href="https://github.com/itsranjithkumar" target="_blank" rel="noopener noreferrer">

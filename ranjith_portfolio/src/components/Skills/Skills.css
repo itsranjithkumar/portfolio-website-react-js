@@ -51,40 +51,9 @@
     flex:1
 }
 
-/* Style for each skill card */
-.skill-box {
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
-}
 
-.skill-box:hover,
-.skill-box.active {
-    font-weight: bold;
-    color: #fff;
-}
-
-.skill-box::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s ease;
-}
-
-.skill-box:hover::after,
-.skill-box.active::after {
-    width: 100%;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1025px) {
-    .skills {
+@media (max-width:1025px) {
+    .skills{
         padding-left: 1rem;
     }
     .skills,
