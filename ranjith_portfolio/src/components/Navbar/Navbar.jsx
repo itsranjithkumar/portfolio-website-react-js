@@ -4,10 +4,17 @@ import logo from '../../../public/assets/mylogo.png';
 import MobileNav from './MobileNav/MobileNav';
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false); // Define openMenu state here
+  const [activeMenuItem, setActiveMenuItem] = useState('#home');
+
+  const handleMenuClick = (menuId) => {
+    setActiveMenuItem(menuId);
+    document.getElementById(menuId.substring(1)).scrollIntoView({ behavior: 'smooth' });
+    setOpenMenu(false); // Close mobile menu after click (optional)
+  };
 
   const toggleMenu = () => {
-    setOpenMenu(!openMenu);
+    setOpenMenu(!openMenu); // Toggle the mobile menu open/close
   };
 
   return (
@@ -21,12 +28,63 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <ul className='desktop-menu'>
-            <li><a href="#home" className="menu-item">Home</a></li>
-            <li><a href="#skills" className="menu-item">Skills</a></li>
-            <li><a href="#Work_experience" className="menu-item">Work Experience</a></li>
-            <li><a href="#contact_Me" className="menu-item">Contact Me</a></li>
-            <button className="contact-btn">Hire Me</button>
+            <li>
+              <a
+                href="#home"
+                className={`menu-item ${activeMenuItem === '#home' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMenuClick('#home');
+                }}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className={`menu-item ${activeMenuItem === '#skills' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMenuClick('#skills');
+                }}
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="#work-experience"
+                className={`menu-item ${activeMenuItem === '#work-experience' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMenuClick('#work-experience');
+                }}
+              >
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact-me"
+                className={`menu-item ${activeMenuItem === '#contact-me' ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMenuClick('#contact-me');
+                }}
+              >
+                Contact Me
+              </a>
+            </li>
           </ul>
+
+          {/* Contact Button */}
+          <button
+            className="contact-btn"
+            onClick={() => document.getElementById('resume').scrollIntoView({ behavior: 'smooth' })}
+          >
+            Hire Me
+          </button>
 
           {/* Menu button for mobile */}
           <button className="menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
