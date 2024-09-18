@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer';
 import GithubStreak from './components/GithubStreak/GithubStreak';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import DownloadCV from "./components/DownloadCV";
+
 import './App.css';
 
 const App = () => {
