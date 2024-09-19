@@ -10,13 +10,13 @@ const projectsData = [
   },
   {
     title: 'React-login validation',
-    image: 'public/assets/login.png',
+    image: 'public/assets/login1.jpg',
     description: 'Developed using React for a dynamic UI, React Hook Form for efficient form handling, Yup for validation, and styled using CSS.',
     link: 'https://github.com/itsranjithkumar/react-js-from-validation/tree/main/app'
   },
   {
     title: 'React-Fitness-website',
-    image: 'public/assets/fitness2.png', // Add the path to the new project image
+    image: 'public/assets/fitness4.png', // Add the path to the new project image
     description: 'Designed and developed a gym application using React and JavaScript. This website consists of two pages: Home and Exercises. Built and deployed on Netlify.',
     link: 'https://github.com/itsranjithkumar/React-Fitness-app-'
   },
