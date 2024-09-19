@@ -1,4 +1,4 @@
-/* Projects.css */
+/* Projects grid container */
 .projects-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -6,6 +6,7 @@
     padding: 20px;
   }
   
+  /* Project card styles */
   .project-card {
     position: relative;
     border-radius: 8px;
@@ -55,25 +56,27 @@
   .project-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #fff; /* Set project title color to white */
   }
   
   .project-description {
     font-size: 1rem;
     text-align: center;
     padding: 0 10px;
+    color: #fff; /* Set project description color to white */
   }
   
-  /* Projects.css */
-.projects-section {
+  /* Projects section container */
+  .projects-section {
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Left-align the section content */
   }
   
+  /* Project heading */
   .projects-heading {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
-    color: #333; /* Adjust color as needed */
+    color: #fff; /* Set project heading color to white */
+    text-align: left; /* Ensure heading is aligned to the left */
   }
-  
-  /* Rest of your existing styles */
   
