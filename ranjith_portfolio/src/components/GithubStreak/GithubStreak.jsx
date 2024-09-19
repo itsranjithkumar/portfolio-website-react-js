@@ -5,7 +5,7 @@ const GithubStreak = () => {
   return (
     <div style={{ textAlign: 'center' }}>
 
-      <p style={{ fontSize: '25px' }}>Ranjith Kumar's GitHub Streak</p>
+      <p style={{ fontSize: '25px' }}>My GitHub Streak</p>
       <br />
       <a href="https://github.com/itsranjithkumar" target="_blank" rel="noopener noreferrer">
         <img 

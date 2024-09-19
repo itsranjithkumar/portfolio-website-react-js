@@ -11,12 +11,12 @@ const WorkExperience = lazy(() => import('./components/WorkExperience/WorkExperi
 const ContactMe = lazy(() => import('./components/ContactMe/ContactMe'));
 const GithubStreak = lazy(() => import('./components/GithubStreak/GithubStreak'));
 const DownloadCV = lazy(() => import('./components/GithubStreak/DownloadCV'));
+const Projects = lazy(() => import('./components/Projects/Projects')); // Importing Projects component lazily
 
 const App = () => {
   return (
     <div className="App">
-      
-        <Navbar />
+      <Navbar />
       <main className="container">
         <Suspense fallback={<div>Loading...</div>}>
           <section id="home">
@@ -29,6 +29,10 @@ const App = () => {
 
           <section id="work-experience">
             <WorkExperience />
+          </section>
+
+          <section id="projects"> {/* Adding the Projects section */}
+            <Projects />
           </section>
 
           <section id="resume">

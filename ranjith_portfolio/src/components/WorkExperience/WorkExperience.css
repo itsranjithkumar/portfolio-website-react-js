@@ -1,10 +1,10 @@
 /* Apply styles to the parent container */
-.parent-container { /* Replace this with the actual parent container class or ID */
-    display: block; /* Ensure the parent uses block layout */
-    width: 100vw; /* Viewport width to fill the full screen */
-    height: auto; /* Auto height to adjust content */
-    margin: 0; /* Remove any margins */
-    padding: 0; /* Remove any padding */
+.parent-container { 
+    display: block; 
+    width: 100vw; 
+    height: auto; 
+    margin: 0; 
+    padding: 0; 
 }
 
 /* Aggressively target the experience container */

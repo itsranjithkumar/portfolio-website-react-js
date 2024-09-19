@@ -4,6 +4,8 @@
     border: 1.5px solid #6751b9;
     padding: 1.5rem;
     margin: 0 1rem;
+    width: 120%;
+    align-self: auto;
 }
 
 .work-experience-card h5 {
