@@ -11,7 +11,7 @@ const WorkExperience = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 1, // Change to 1 to avoid confusion in layout
+    slidesToShow: 1, 
     slidesToScroll: 1,
     arrows: false,
     responsive: [
@@ -54,13 +54,6 @@ const WorkExperience = () => {
           <i className='fa-solid fa-chevron-right'></i>
         </div>
       </div>
-
-      {/* Responsibilities can be displayed below the slider */}
-      {/* <ul className='responsibilities-list'>
-        {WORK_EXPERIENCE[0].responsibilities.map((responsibility, idx) => (
-          <li key={idx}>{responsibility}</li>
-        ))}
-      </ul> */}
     </section>
   );
 };
