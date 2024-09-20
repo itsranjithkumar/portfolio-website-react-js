@@ -52,3 +52,20 @@ export const WORK_EXPERIENCE = [
     },
   ];
   
+
+  export const CERTIFICATES = [
+    {
+      title: 'Full Stack Web Development',
+      date: 'June 2024',
+      issuer: 'Coursera',
+      image: '/path/to/certificate1.png', // Replace with actual image path
+    },
+    {
+      title: 'React Advanced Training',
+      date: 'May 2024',
+      issuer: 'Udemy',
+      image: '/path/to/certificate2.png', // Replace with actual image path
+    },
+    // Add more certificates here
+  ];
+  

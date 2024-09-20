@@ -11,7 +11,8 @@ const WorkExperience = lazy(() => import('./components/WorkExperience/WorkExperi
 const ContactMe = lazy(() => import('./components/ContactMe/ContactMe'));
 const GithubStreak = lazy(() => import('./components/GithubStreak/GithubStreak'));
 const DownloadCV = lazy(() => import('./components/GithubStreak/DownloadCV'));
-const Projects = lazy(() => import('./components/Projects/Projects')); // Importing Projects component lazily
+const Projects = lazy(() => import('./components/Projects/Projects'));
+const Certificate = lazy(() => import('./components/WorkExperience/Certificates/Certificate')); // Importing Certificates component lazily
 
 const App = () => {
   return (
@@ -31,12 +32,16 @@ const App = () => {
             <WorkExperience />
           </section>
 
-          <section id="projects"> {/* Adding the Projects section */}
+          <section id="projects">
             <Projects />
           </section>
 
           <section id="resume">
             <DownloadCV />
+          </section>
+
+          <section id="certificates"> {/* Adding the Certificates section */}
+            <Certificate />
           </section>
 
           <section id="github-streak">
