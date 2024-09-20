@@ -16,7 +16,7 @@ const projectsData = [
   },
   {
     title: 'React-Fitness-website',
-    image: 'public/assets/fitness4.png', // Add the path to the new project image
+    image: 'public/assets/fitness5.png', // Add the path to the new project image
     description: 'Designed and developed a gym application using React and JavaScript. This website consists of two pages: Home and Exercises. Built and deployed on Netlify.',
     link: 'https://github.com/itsranjithkumar/React-Fitness-app-'
   },
