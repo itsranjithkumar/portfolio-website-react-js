@@ -8,10 +8,11 @@ const WorkExperience = () => {
   const sliderRef = useRef(null);
 
   const settings = {
-    dots: false,
-    infinite: false, // Disabled infinite scroll
+    dots: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 2, // Adjust as needed
+    slidesToShow: 1, // Change to 1 to avoid confusion in layout
+    slidesToScroll: 1,
     arrows: false,
     responsive: [
       {
@@ -37,21 +38,29 @@ const WorkExperience = () => {
       <h5>Work Experience</h5>
 
       <div className='experience-content'>
-        <div className='arrow-right' onClick={slideRight}>
-          <i className='fa-solid fa-chevron-right'></i>
-        </div>
-
         <div className='arrow-left' onClick={slideLeft}>
           <i className='fa-solid fa-chevron-left'></i>
         </div>
 
         <Slider ref={sliderRef} {...settings}>
           {WORK_EXPERIENCE.map((item, index) => (
-            <ExperienceCard key={index} details={item} />
+            <div key={index}>
+              <ExperienceCard details={item} />
+            </div>
           ))}
         </Slider>
-        <p id='work-experience'></p>
+
+        <div className='arrow-right' onClick={slideRight}>
+          <i className='fa-solid fa-chevron-right'></i>
+        </div>
       </div>
+
+      {/* Responsibilities can be displayed below the slider */}
+      {/* <ul className='responsibilities-list'>
+        {WORK_EXPERIENCE[0].responsibilities.map((responsibility, idx) => (
+          <li key={idx}>{responsibility}</li>
+        ))}
+      </ul> */}
     </section>
   );
 };

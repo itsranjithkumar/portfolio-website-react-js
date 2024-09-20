@@ -40,10 +40,15 @@ export const Skillsdata = [
 
 export const WORK_EXPERIENCE = [
     {
-        title: 'Intern - Magizh Technologies',
-        date: 'March 2024 – Present', // Lowercase 'date'
-        responsibilities: [
-            'During my internship at Magizh Technologies, I have been actively involved in full stack development, utilizing modern technologies like React for building dynamic, responsive user interfaces, and FastAPI for developing robust, high-performance backend services.',
-        ],
+      title: 'Intern - Magizh Technologies',
+      date: 'March 2024 – Present',
+      responsibilities: [
+        "Actively involved in full stack development, utilizing modern technologies like React for building dynamic, responsive user interfaces.",
+        "Developed a web application using React and FastAPI.",
+        "Worked on a web application using React and Node.js.",
+        "Implemented component-based architecture for better maintainability and scalability.",
+        "Ensured cross-browser compatibility and optimized performance for improved user experience."
+      ],
     },
-];
+  ];
+  

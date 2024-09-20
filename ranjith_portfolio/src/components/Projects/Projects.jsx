@@ -8,6 +8,7 @@ const projectsData = [
     description: 'Created complete Backend API’s and unit testing for a social media platform using FastAPI, Docker, PostgreSQL, Postman, JWT authentication, etc.',
     link: 'https://github.com/itsranjithkumar/python-api'
   },
+  
   {
     title: 'React-login validation',
     image: 'public/assets/login1.jpg',
