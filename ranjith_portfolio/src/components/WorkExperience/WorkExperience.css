@@ -10,7 +10,7 @@
 /* Aggressively target the experience container */
 .experience-container {
     display: block; /* Ensure block-level element */
-    width: 100%; /* Force the width to span 100% of the parent */
+    width: 50%; /* Force the width to span 100% of the parent */
     max-width: none; /* Remove any inherited max-width restrictions */
     padding: 20px;
     font-size: 16px;
@@ -39,5 +39,6 @@
     width: 100% !important;
     max-width: none !important;
 }
+
 
 
