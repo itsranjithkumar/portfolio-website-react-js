@@ -53,19 +53,22 @@ export const WORK_EXPERIENCE = [
   ];
   
 
-  export const CERTIFICATES = [
-    {
-      title: 'Full Stack Web Development',
-      date: 'June 2024',
-      issuer: 'Coursera',
-      image: '/path/to/certificate1.png', // Replace with actual image path
-    },
-    {
-      title: 'React Advanced Training',
-      date: 'May 2024',
-      issuer: 'Udemy',
-      image: '/path/to/certificate2.png', // Replace with actual image path
-    },
-    // Add more certificates here
-  ];
+  // src/components/Certificates/data.js
+// data.js
+
+const certificatesData = [
+  {
+    title: 'React Development Certification',
+    image: '/assets/react_certificate.png', // Update with the correct image path
+    description: 'An advanced React development certificate covering hooks, state management, and more.',
+    link: 'https://example.com/certificate-1'
+  },
+  
+];
+
+export default certificatesData;
+
+
+
+  
   

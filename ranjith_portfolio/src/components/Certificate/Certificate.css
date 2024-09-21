@@ -1,0 +1,43 @@
+/* src/components/certificate.css */
+
+.certificate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 400px; /* Limit width */
+}
+
+.certificate-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #007BFF; /* Highlight color */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin-bottom: 20px; /* Space below the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.certificate-title {
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark color for contrast */
+    margin: 10px 0; /* Margin above and below */
+    text-align: center; /* Center title */
+}
+
+.certificate-description {
+    font-size: 1rem; /* Normal font size for description */
+    color: #666; /* Subtle text color */
+    text-align: center; /* Center text */
+    padding: 0 10px; /* Padding for text */
+}
+
+/* Optional: Add a hover effect for the whole container */
+.certificate-container:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
