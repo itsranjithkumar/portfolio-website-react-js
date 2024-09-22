@@ -31,12 +31,14 @@
 }
 
 
-.hero-content h2{
-    font-size:3.8rem;
+.hero-content h2 {
+    font-size: 3.8rem;
     font-weight: 600;
     line-height: 5rem;
     margin-bottom: 1rem;
+    color: white; /* Change heading color to white */
 }
+
 
 .hero-content p{
     width:80%;

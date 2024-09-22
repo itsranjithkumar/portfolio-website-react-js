@@ -1,43 +1,69 @@
-/* src/components/certificate.css */
+/* src/components/Certificate.css */
+
+.certificate-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the section content */
+    background-color: #343042; /* Blue background for the section */
+    padding: 40px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.certificate-heading {
+    font-size: 2.5rem; /* Font size for the heading */
+    margin-bottom: 30px; /* Margin below the heading */
+    color: white; /* White color for the heading */
+    text-align: center; /* Center the heading */
+}
+
+.certificate-row {
+    display: flex; /* Use flexbox to arrange certificates in a row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between the certificate containers */
+    max-width: 800px; /* Limit the max width of the row */
+    margin: 0 auto; /* Center the row within the parent container */
+}
 
 .certificate-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff; /* White background */
+    align-items: center; /* Center the certificate and text */
+    width: 300px; /* Set a fixed width for each certificate container */
+    padding: 20px; /* Add padding for better spacing */
+    background: white; /* White background for each certificate */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 400px; /* Limit width */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transition effects */
+}
+
+.certificate-container:hover {
+    transform: scale(1.05); /* Slightly scale on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .certificate-image {
     width: 100%; /* Full width of the container */
     height: auto; /* Maintain aspect ratio */
-    border: 2px solid #007BFF; /* Highlight color */
+    border: 2px solid #007BFF; /* Border color */
     border-radius: 8px; /* Slightly rounded corners */
     margin-bottom: 20px; /* Space below the image */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.4s ease; /* Add transition for image */
 }
 
-.certificate-title {
-    font-size: 1.5rem; /* Larger font size */
+.certificate-image:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+.certificate-sql {
+    font-size: 1.2em; /* Font size for description */
     font-weight: bold; /* Bold text */
     color: #333; /* Dark color for contrast */
-    margin: 10px 0; /* Margin above and below */
-    text-align: center; /* Center title */
-}
-
-.certificate-description {
-    font-size: 1rem; /* Normal font size for description */
-    color: #666; /* Subtle text color */
+    margin-top: 10px; /* Margin above */
     text-align: center; /* Center text */
-    padding: 0 10px; /* Padding for text */
+    transition: color 0.4s ease; /* Transition for color */
 }
 
-/* Optional: Add a hover effect for the whole container */
-.certificate-container:hover {
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+.certificate-container:hover .certificate-sql {
+    color: #1e88e5; /* Change text color on hover */
 }
