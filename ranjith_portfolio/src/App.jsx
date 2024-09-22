@@ -46,17 +46,17 @@ const App = () => {
                     <DownloadCV />
                   </section>
 
+                  {/* Certificate section added to the home page */}
+                  <section id="certificate">
+                    <Certificate />
+                  </section>
+
                   <section id="github-streak">
                     <GithubStreak />
                   </section>
 
                   <section id="contact-me">
                     <ContactMe />
-                  </section>
-
-                  {/* Certificate section added to the home page */}
-                  <section id="certificate">
-                    <Certificate />
                   </section>
                 </>
               } />
