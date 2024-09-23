@@ -4,7 +4,7 @@ import './Projects.css'; // Importing the CSS file
 const projectsData = [
   {
     title: 'Python API Project',
-    image: 'public/assets/FastAPI_b.png', // Update with the correct path
+    image: './FastAPI_b.png', // Update with the correct path
     description: 'Created complete Backend API’s and unit testing for a social media platform using FastAPI, Docker, PostgreSQL, Postman, JWT authentication, etc.',
     link: 'https://github.com/itsranjithkumar/python-api'
   },
