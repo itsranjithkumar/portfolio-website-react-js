@@ -1,88 +1,91 @@
-/* src/components/Certificate.css */
-
 .certificate-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the section content */
-    background-color: #343042; /* Blue background for the section */
-    padding: 40px; /* Add padding for spacing */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    align-items: center;
+    background-color: #343042;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .certificate-heading {
-    font-size: 2.5rem; /* Font size for the heading */
-    margin-bottom: 30px; /* Margin below the heading */
-    color: white; /* White color for the heading */
-    text-align: center; /* Center the heading */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
 }
 
 .certificate-row {
-    display: flex; /* Use flexbox to arrange certificates in a row */
-    justify-content: center; /* Center the items horizontally */
-    gap: 20px; /* Space between the certificate containers */
-    max-width: 800px; /* Limit the max width of the row */
-    margin: 0 auto; /* Center the row within the parent container */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow the certificates to wrap to the next line */
 }
 
 .certificate-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the certificate and text */
-    width: 300px; /* Set a fixed width for each certificate container */
-    padding: 20px; /* Add padding for better spacing */
-    background: white; /* White background for each certificate */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transition effects */
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 20px; /* Add some space below the containers */
 }
 
 .certificate-container:hover {
-    transform: scale(1.05); /* Slightly scale on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .certificate-image {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid #007BFF; /* Border color */
-    border-radius: 8px; /* Slightly rounded corners */
-    margin-bottom: 20px; /* Space below the image */
-    transition: transform 0.4s ease; /* Add transition for image */
+    width: 100%;
+    height: auto;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .certificate-image:hover {
-    transform: scale(1.1); /* Scale the image on hover */
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.1);
 }
 
 .certificate-sql {
-    font-size: 1.2em; /* Font size for description */
-    font-weight: bold; /* Bold text */
-    color: #333; /* Dark color for contrast */
-    margin-top: 10px; /* Margin above */
-    text-align: center; /* Center text */
-    transition: color 0.4s ease; /* Transition for color */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+    transition: color 0.4s ease;
 }
 
 .certificate-container:hover .certificate-sql {
-    color: #1e88e5; /* Change text color on hover */
-}
-.certificate-image {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid #007BFF; /* Border color */
-    border-radius: 8px; /* Slightly rounded corners */
-    margin-bottom: 20px; /* Space below the image */
-    transition: transform 0.4s ease, filter 0.4s ease; /* Transition for image */
+    color: #1e88e5;
 }
 
-.certificate-image:hover {
-    transform: scale(1.1) rotate(2deg); /* Scale and rotate on hover */
-    filter: brightness(1.1); /* Slightly brighten the image */
-}
-
-/* Click animation */
 .certificate-image:active {
-    transform: scale(0.95); /* Scale down slightly on click */
-    transition: transform 0.1s ease; /* Quick transition for click */
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .certificate-heading {
+        font-size: 2rem;
+    }
+
+    .certificate-container {
+        width: 90%; /* Make containers take up more space on smaller screens */
+    }
+
+    .certificate-row {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
